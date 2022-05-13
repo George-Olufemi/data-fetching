@@ -1,0 +1,23 @@
+[
+    {
+        "name": "George Olufemi",
+        "age": 18,
+        "state": "Lagos",
+        "gender": "Male",
+        "married": "false"
+    },
+    {
+        "name": "Oluwaseun Olufemi",
+        "age": 20,
+        "state": "Calabar",
+        "gender": "female",
+        "married": "false"
+    },
+    {
+        "name": "Bola Are",
+        "age": 32,
+        "state": "Kwara",
+        "gender":"female",
+        "married": "true"
+    }
+]
