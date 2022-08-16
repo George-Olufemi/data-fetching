@@ -1,18 +1,19 @@
 import React, { useState, useEffect } from 'react';
-import './Other.css';
-import axios from 'axios';
+import axios from "axios";
 
-function Other() {
-  const [books, setBooks] = useState([]);
+const Home = () => {
+    const [books, setBooks] = useState([]);
+
     useEffect(() => {
-      axios.get('https://fakerapi.it/api/v1/books?_quantity=50')
-      .then(response => setBooks(response.data.data))
+        axios.get('https://fakerapi.it/api/v1/books?_quantity=50')
+        .then(response => setBooks(response.data.data))
     }, [])
+
   return (
-    <div className="box">
-      {
+    <div>
+        {
         books ? books.map((book, idx) => (
-        <div key={idx} className='other'>
+        <div key={idx} className=''>
           <img className='image' src={book.image} alt=""/>
           <h1>{book.title}</h1>
           <h2>{book.author}</h2>
@@ -23,9 +24,8 @@ function Other() {
         ) )
         : null
       }
-      <button>Modal</button>
     </div>
   )
 }
 
-export default Other;
+export default Home;
